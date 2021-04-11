@@ -19,6 +19,9 @@ make
 This will create the `libasound_module_pcm_cudaFIR.so` alsa external pluging in the build directory.
 
 Note : cudaFIR has been only tested on a Jetson TX1, but it must works on any Linux machine with a Nvidia GPU for which the cuda SDK exist.
+cudaFIR compiled on NVIDIA Jetson Nano 2G but requires exporting compiler path with:
+export CUDACXX=path
+where path is given by sudo find / -name nvcc
 
 ## Install & Alsa configuration
 
